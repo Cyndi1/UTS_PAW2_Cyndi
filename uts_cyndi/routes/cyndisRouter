@@ -1,0 +1,9 @@
+var express = require('express');
+var router = express.Router();
+
+const PariwisataController = require('../controller/cyndi');
+const pariwisata = require('../model/cyndi');
+
+router.post ('/', PariwisataController.cyndiCreate);
+
+module.exports = router;
